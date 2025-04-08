@@ -1,3 +1,5 @@
 # macOS system files
 .DS_Store
 **/.DS_Store 
+# Ignore files in logs directory, keep the directory itself
+/logs/*
