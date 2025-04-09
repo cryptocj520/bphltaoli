@@ -22,6 +22,11 @@ os.chdir(project_root)
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
+# 添加funding_arbitrage_bot目录到Python路径
+bot_dir = os.path.join(project_root, 'funding_arbitrage_bot')
+if bot_dir not in sys.path:
+    sys.path.insert(0, bot_dir)
+
 # 打印当前的Python路径，用于调试
 print(f"Python路径: {sys.path}")
 print(f"当前工作目录: {os.getcwd()}")
